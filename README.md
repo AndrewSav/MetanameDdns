@@ -1,5 +1,6 @@
 MetanameDdns
 ============
+This is a Dynamic DNS update client and .NET API wrapper for http://metaname.net/
 This solution consists of two parts:
   - [Metaname API][1] .Net Wrapper
   - Dynamic DNS Update Client for Metaname using their API
