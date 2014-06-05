@@ -254,6 +254,7 @@ namespace Metaname.Api
             JToken result = Client.Invoke("drop_catching_names", _clientId, _clientSecret);
             Logger.Debug(string.Format("DropCatchingNames method finished. result: {0}", result));            
         }
+        
         public void PlaceDropCatchingBid(string domainName, decimal bid, bool autoBid)
         {
             Logger.Debug(string.Format("Entering PlaceDropCatchingBid method. domainName: {0}, bid: {1}, autoBid: {2}",domainName, bid, autoBid));
@@ -261,5 +262,26 @@ namespace Metaname.Api
             Logger.Debug(string.Format("PlaceDropCatchingBid method finished. result: {0}", result));
         }
 
+        public void ConfigureZone(string zoneName, List<ResourceRecordDetails> resourceRecords, Dictionary<string, string> options)
+        {
+            Logger.Debug(string.Format("Entering ConfigureZone method. zoneName: {0}", zoneName));
+            if (resourceRecords != null)
+            {
+                foreach (ResourceRecordDetails resourceRecord in resourceRecords)
+                {
+                    Logger.Debug(string.Format("Resource record: {0}", resourceRecord));
+                }
+            }
+            if (options != null)
+            {
+                foreach (KeyValuePair<string, string> option in options)
+                {
+                    Logger.Debug(string.Format("Option {0}: {1}", option.Key, option.Value));
+                }
+            }            
+            JToken result = Client.Invoke("configure_zone", _clientId, _clientSecret, zoneName, resourceRecords, options);
+            Logger.Debug(string.Format("ConfigureZone method finished. result: {0}", result));
+            
+        }
     }
 }
