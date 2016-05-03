@@ -34,7 +34,7 @@ I like to beleive that the configuration file and the API usage are self-explana
   [2]: http://logging.apache.org/log4net/release/manual/configuration.html
   [3]: http://james.newtonking.com/json
   [4]: http://logging.apache.org/log4net/
-  [5]: http://jayrock.berlios.de/
+  [5]: https://atifaziz.github.io/projects/jayrock/
   [6]: https://github.com/dreamins/Route53DDNS
   [7]: http://stackoverflow.com
   
