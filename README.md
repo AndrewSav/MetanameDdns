@@ -16,7 +16,7 @@ This solution consists of two parts:
 
 **Compilation**
 
-I used Visual Studion 2013, but I have not reason to think that it would not work in Visual Studion 2012 as well. I have not checked in the nuget packages in git, so you need to make sure that the package restore is enabled in your Visual Studio.
+I used Visual Studio 2013, but I have no reason to think that it would not work in Visual Studion 2012 as well. I have not checked in the nuget packages in git, so you need to make sure that the package restore is enabled in your Visual Studio.
  
 **Configuration and API**
 
